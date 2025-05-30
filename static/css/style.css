@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e6f0fa, #2c5282); /* Dégradé bleu clair à bleu foncé */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(44, 82, 130, 0.2); /* Ombre dynamique */
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    color: #2c5282;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#messages {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    height: 400px; /* Ajusté pour plus de place */
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.domino {
+    background-color: #e6f0fa;
+    color: #2c5282;
+    align-self: flex-start;
+}
+
+.user {
+    background-color: #bee3f8;
+    color: #2a4365;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 20px;
+    width: 80%;
+    max-width: 580px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(44, 82, 130, 0.1);
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #5a9bd5, #2c5282); /* Dégradé coloré */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
